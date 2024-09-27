@@ -1,0 +1,32 @@
+print(" ")
+d = "Examen del primer parcial:" #Se declara la variable 'd'
+a = "/ Alumno: Ramirez Torres Angel Manuel"#Se declara la variable 'a'
+b = "/ Grado y Grupo: 3°W"#Se declara la variable 'b'
+c = "/ Mi numero de contro es: 1206"#Se declara la variable 'c'
+espacio = (" ")#Se declara la variable 'espacio'
+info = d +espacio + a + espacio + b + espacio + c #Aqui se juntan los valores (d, a, b, c, espacio) para crear una sola variable 
+print (info)#Muestra el contenido de la variable 'info'
+print(" ")
+
+def main():
+    """Calcula el factorial de un número entero no negativo."""
+    
+    # Solicita al usuario que ingrese un número entero no negativo
+    n = int(input("Ingrese un número entero no negativo: "))
+    
+    # Verifica que el número sea no negativo
+    if n < 0:
+        print("Por favor, ingrese un número entero no negativo.")
+        return  # Termina la función si el número es negativo
+
+    # Calcula el factorial
+    factorial = 1  # Inicializa la variable factorial en 1
+    for i in range(1, n + 1):
+        factorial *= i  # Multiplica el factorial por cada número hasta n
+    
+    # Imprime el resultado
+    print(f"El factorial de {n} es {factorial}.")
+
+# Ejecuta la función principal
+if __name__ == "__main__":
+    main()
